@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BooksApp</string>
+    <string name="search">Search</string>
+    <string name="masukan_nama_buku">Masukan Nama Buku!</string>
+</resources>

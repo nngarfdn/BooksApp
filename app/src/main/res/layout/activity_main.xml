@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/edit_query"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text=""
+       android:hint="@string/masukan_nama_buku"
+       android:importantForAutofill="no"
+       tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:text="@string/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_query"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_search"/>
+
+</RelativeLayout>
